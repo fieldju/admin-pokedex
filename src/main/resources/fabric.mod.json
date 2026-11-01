@@ -3,7 +3,7 @@
   "id": "admin_pokedex",
   "version": "${version}",
   "name": "Admin Pokédex",
-  "description": "Server-side Pokédex menu: pick any Pokémon, form, level and shininess and get it. Opens with /pokedex.",
+  "description": "Server-side Pokédex menu: pick any Pokémon, form, level and shininess and get it. Opens with /dex (Cobblemon already owns /pokedex).",
   "authors": ["fieldju"],
   "license": "MIT",
   "environment": "server",

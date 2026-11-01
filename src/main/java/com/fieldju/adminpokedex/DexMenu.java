@@ -155,7 +155,7 @@ public class DexMenu extends ChestMenu {
             .append(Component.literal(describe(form)).withStyle(ChatFormatting.GOLD))
             .append(Component.literal(" to " + where + "!").withStyle(ChatFormatting.GREEN));
         player.sendSystemMessage(msg);
-        AdminPokedex.LOGGER.info("{} took {} (form={}, aspects={}) via /pokedex",
+        AdminPokedex.LOGGER.info("{} took {} (form={}, aspects={}) via /dex",
             player.getGameProfile().getName(), describe(form), pokemon.getForm().getName(), pokemon.getAspects());
     }
 
@@ -201,7 +201,7 @@ public class DexMenu extends ChestMenu {
         button(NEXT_GEN, Items.SPECTRAL_ARROW, "Next generation ▶▶");
         ItemStack info = button(INFO, Items.BOOK, "Page " + (page + 1) + " of " + pages);
         lore(info, line("Dex #" + species.get(first).getNationalPokedexNumber() + " – #" + species.get(last).getNationalPokedexNumber(), ChatFormatting.GRAY),
-            line("Tip: /pokedex <name> jumps straight to one", ChatFormatting.DARK_GRAY));
+            line("Tip: /dex <name> jumps straight to one", ChatFormatting.DARK_GRAY));
         filler();
         broadcastChanges();
     }

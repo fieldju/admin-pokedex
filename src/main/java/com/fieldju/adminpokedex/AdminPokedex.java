@@ -24,7 +24,7 @@ public class AdminPokedex implements ModInitializer {
     @Override
     public void onInitialize() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) ->
-            dispatcher.register(Commands.literal("pokedex")
+            dispatcher.register(Commands.literal("dex")
                 .executes(ctx -> open(ctx, null))
                 .then(Commands.argument("species", StringArgumentType.word())
                     .suggests((ctx, builder) -> SharedSuggestionProvider.suggest(
