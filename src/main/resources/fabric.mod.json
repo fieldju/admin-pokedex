@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "admin_pokedex",
+  "version": "${version}",
+  "name": "Admin Pokédex",
+  "description": "Server-side Pokédex menu: pick any Pokémon, form, level and shininess and get it. Opens with /pokedex.",
+  "authors": ["fieldju"],
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": ["com.fieldju.adminpokedex.AdminPokedex"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16",
+    "minecraft": "1.21.1",
+    "fabric-api": "*",
+    "cobblemon": ">=1.7.0"
+  }
+}
